@@ -1,0 +1,8 @@
+<!-- layouts/partials/shared_product_info.html -->
+
+<h2>Downloads</h2>
+<ul>
+  {{ range .Site.Data.pdfs.general_downloads.downloads }}
+    <li><a href="{{ .link }}" target="_blank">{{ .name }}</a></li>
+  {{ end }}
+</ul>

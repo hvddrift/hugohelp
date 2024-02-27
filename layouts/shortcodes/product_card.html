@@ -1,0 +1,14 @@
+<!-- layouts/shortcodes/product_card.html -->
+
+<h1>{{ .Get "name" }}</h1>
+<p>Model with {{ .Get "hobs" }} gas hobs. Named after a volcano in {{ .Get "location" }}.</p>
+
+<!-- ... other unique content ... -->
+
+<h2>Technical Downloads</h2>
+<ul>
+  <li><a href="{{ .Get "technical_document" }}">{{ .Get "name" }} – Technical document</a></li>
+</ul>
+
+<!-- Include shared content -->
+{{ partial "shared_product_info.html" . }}

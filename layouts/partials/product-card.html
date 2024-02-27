@@ -1,0 +1,24 @@
+<div class="product-card">
+  <h3 class="product-name">
+      <a href="{{ .link }}">{{ .name }}</a>
+  </h3>
+  <table class="product-info">
+    <tr>
+      <td>Burners:</td>
+      <td>
+        {{ $burners := split .burners "•" }}
+        {{ $mj := index $burners 2 }}
+        {{ $formattedMJ := replace $mj "," "." }}
+        {{ $formattedMJ }}
+      </td>
+    </tr>
+    <tr>
+      <td>Size:</td>
+      <td>{{ .dimensions }}</td>
+    </tr>
+  </table>
+  <a href="{{ .link }}">
+      <img src="{{ .image }}" alt="{{ .name }}" class="product-image">
+  </a>
+</div>
+

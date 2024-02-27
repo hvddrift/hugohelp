@@ -1,0 +1,6 @@
+<!-- layouts/shortcodes/pitt-card-shortcode.html -->
+
+{{ partial "pitt-card" (dict "image" .Params.image "name" .Params.name "burners" .Params.burners "dimensions" .Params.dimensions "link" .Params.link) }}
+
+<!-- Include shared content -->
+{{ partial "shared_product_info.html" . }}

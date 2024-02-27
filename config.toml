@@ -1,0 +1,50 @@
+baseURL = "https://www.pittcooking.info/"
+languageCode = 'en-us'
+title = 'PITT cooking Australia Technical'
+theme = "hugo-theme-relearn"
+[outputs]
+  home = [ "HTML", "SEARCH", "SEARCHPAGE"]
+  section = ["HTML", "PRINT"]
+  page = ["HTML", "PRINT"]
+[params]
+author = "Hans"
+description = "Tech Docs for PITT"
+# Shows a checkmark for visited pages on the menu
+showVisitedLinks = true
+themeVariant = "zen-dark"
+[markup.goldmark.renderer]
+unsafe = true
+[outputFormats]
+  [outputFormats.PRINT]
+    name= "PRINT"
+    baseName = "index.print"
+    isHTML = true
+    mediaType = 'text/html'
+    permalinkable = false
+    noUgly = true
+
+[languages]
+  [languages.en]
+    title = "PITT cooking Technical"
+    weight = 1
+    languageName = "English"
+    [languages.en.params]
+      landingPageName = "<i class='fas fa-home'></i> Home"
+
+  [[languages.en.menu.shortcuts]]
+    name = "<i class='fas fa-fw fa-globe'></i> Official Website"
+    identifier = "official_website"
+    url = "https://pittcooking.com/au/"
+    weight = 20
+
+  [[languages.en.menu.shortcuts]]
+    name = "<i class='fab fa-fw fa-instagram'></i> Instagram"
+    identifier = "instagram"
+    url = "https://www.instagram.com/pittcooking_aus"
+    weight = 30
+
+  [[languages.en.menu.shortcuts]]
+    name = "<i class='fab fa-fw fa-facebook-square'></i> Facebook"
+    identifier = "facebook"
+    url = "https://www.facebook.com/pittcookingaustralia"
+    weight = 40

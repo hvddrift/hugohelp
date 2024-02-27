@@ -1,0 +1,29 @@
+<!-- layouts/shortcodes/design_details.html -->
+
+<table style="width: 80%;">
+    <tr>
+      <th>Design Details</th>
+      <th></th>
+    </tr>
+    <tr>
+      <td>Minimum benchtop depth</td>
+      <td style="text-align: center;">{{ .Get "minimum_benchtop_depth" }}</td>
+    </tr>
+    <tr>
+      <td>Minimum cabinet width</td>
+      <td style="text-align: center;">{{ .Get "minimum_cabinet_width" }}</td>
+    </tr>
+    <tr>
+      <td>Benchtop thickness (original material)</td>
+      <td style="text-align: center;">{{ .Get "benchtop_thickness" }}</td>
+    </tr>
+    <tr>
+      <td>Minimum C-measurement</td>
+      <td style="text-align: center;">{{ .Get "minimum_c_measurement" }}</td>
+    </tr>
+    <tr>
+      <td>Support bar needed?</td>
+      <td style="text-align: center;">{{ .Get "support_bar_needed" }}</td>
+    </tr>
+  </table>
+  

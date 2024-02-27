@@ -1,0 +1,7 @@
+<div class="accordion">
+    <button class="accordion-button">{{ .Get "title" }}</button>
+    <div class="accordion-content">
+      {{ .Inner | markdownify }}
+    </div>
+  </div>
+  

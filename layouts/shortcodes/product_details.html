@@ -1,0 +1,39 @@
+<!-- layouts/shortcodes/product_details.html -->
+<table style="width: 80%;">
+  <tr>
+    <th style="width: 40%;">Specifications</th>
+    <th style="width: 60%;">Details</th>
+  </tr>
+      <td>Type of burners</td>
+      <td>{{ .Get "type_of_burners" }}</td>
+    </tr>
+    <tr>
+      <td>Editions</td>
+      <td>{{ .Get "editions" }}</td>
+    </tr>
+    <tr>
+      <td>The controls</td>
+      <td>{{ .Get "controls" }}</td>
+    </tr>
+    <tr>
+      <td>Module dimensions (DxWxH)</td>
+      <td>{{ .Get "module_dimensions" }}</td>
+    </tr>
+    <tr>
+      <td>Automatic spark ignition</td>
+      <td>{{ .Get "automatic_spark_ignition" }}</td>
+    </tr>
+    <tr>
+      <td>Flame protection</td>
+      <td>{{ .Get "flame_protection" }}</td>
+    </tr>
+    <tr>
+      <td>Weight</td>
+      <td>{{ .Get "weight" }}</td>
+    </tr>
+    <tr>
+      <td>Wok ring</td>
+      <td>{{ .Get "wok_ring" }}</td>
+    </tr>
+  </table>
+  
